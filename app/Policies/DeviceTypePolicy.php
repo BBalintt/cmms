@@ -29,7 +29,7 @@ class DeviceTypePolicy
      */
     public function create(User $user): bool
     {
-        return $user->can('create devicetypes');
+        return $user->can('read devicetypes');
     }
 
     /**

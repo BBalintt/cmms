@@ -13,7 +13,7 @@ class DocumentPolicy
      */
     public function viewAny(User $user): bool
     {
-        return $user->can('read documents');
+        return $user->can('read devicetypes');
     }
 
     /**
@@ -21,7 +21,7 @@ class DocumentPolicy
      */
     public function view(User $user, Document $document): bool
     {
-        return $user->can('read documents');
+        return $user->can('read devicetypes');
     }
 
     /**

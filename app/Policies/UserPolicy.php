@@ -12,7 +12,7 @@ class UserPolicy
      */
     public function viewAny(User $user): bool
     {
-        return $user->can('read users');
+        return $user->can('read devicetypes');
     }
 
     /**
@@ -20,7 +20,7 @@ class UserPolicy
      */
     public function view(User $user, User $model): bool
     {
-        return $user->can('read users');
+        return $user->can('read devicetypes');
     }
 
     /**

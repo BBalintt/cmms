@@ -13,7 +13,7 @@ class PermissionPolicy
      */
     public function viewAny(User $user): bool
     {
-        return $user->can('read permissions');
+        return $user->can('read devicetypes');
     }
 
     /**
@@ -21,7 +21,7 @@ class PermissionPolicy
      */
     public function view(User $user, Permission $permission): bool
     {
-        return $user->can('read permissions');
+        return $user->can('read devicetypes');
     }
 
     /**

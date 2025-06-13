@@ -13,7 +13,7 @@ class DevicePolicy
      */
     public function viewAny(User $user): bool
     {
-        return $user->can('read devices');
+        return $user->can('read devicetypes');
     }
 
     /**
@@ -21,7 +21,7 @@ class DevicePolicy
      */
     public function view(User $user, Device $device): bool
     {
-        return $user->can('read devices');
+        return $user->can('read devicetypes');
     }
 
     /**
@@ -29,7 +29,7 @@ class DevicePolicy
      */
     public function create(User $user): bool
     {
-        return $user->can('create devices');
+        return $user->can('read devicetypes');
     }
 
     /**
